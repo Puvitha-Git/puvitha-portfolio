@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: VITE_BASE_PATH || "/puvitha-portfolio",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
